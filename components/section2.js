@@ -46,13 +46,13 @@ function Post(data) {
             href={`/posts/${id}`}
             className="text-orange-600 hover:text-orange-800"
           >
-            {data.data.category} || unknown
+            {data.data.category}
           </Link>
           <Link
             href={`/posts/${id}`}
             className="text-gray-800 hover:text-gray-600"
           >
-            - {data.data.published} || unknown
+            - {data.data.published}
           </Link>
         </div>
         <div className="title">
