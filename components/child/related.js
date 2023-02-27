@@ -6,7 +6,7 @@ import Error from "./error";
 import Spinner from "./spinner";
 
 export default function Related() {
-  const { data, isLoading, isError } = fetcher("api/posts");
+  const { data, isLoading, isError } = fetcher("/api/posts");
 
   if (isLoading) return <Spinner></Spinner>;
   if (isError) return <Error></Error>;

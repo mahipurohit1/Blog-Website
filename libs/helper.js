@@ -1,13 +1,9 @@
-// const baseURL = "http://localhost:3000/api/posts";
-
-// endpoint: http://localhost:3000/api/posts
+import data from "../pages/api/data";
 export default async function getPost(id) {
-  const res = await fetch(`api/posts`);
-  const posts = await res.json();
-
+  const { Posts } = data;
   if (id) {
-    return posts.find((value) => value.id == id);
+    return Posts.find((value) => value.id == id);
   }
 
-  return posts;
+  return Posts;
 }
